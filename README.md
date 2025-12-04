@@ -10,13 +10,13 @@ As notícias são coletadas **em tempo real** por meio da **NewsAPI**. A partir 
 
 ---
 
-## 🔍 **1. Busca Semântica**
+##  **1. Busca Semântica**
 Utiliza embeddings do modelo **gemini-embedding-001** e o indexador **FAISS** para recuperar as notícias mais relevantes sobre a COP30.  
 A busca se baseia no *significado* dos textos, não apenas em palavras-chave.
 
 ---
 
-## 🧠 **2. Extração de Tópicos**
+##  **2. Extração de Tópicos**
 Aplicada sobre as notícias recuperadas pela busca semântica.  
 Foi criado um **esquema Pydantic (ExtracaoDados)** para extrair informações estruturadas:
 
@@ -31,7 +31,7 @@ O modelo LLM utilizado na extração foi o **Gemini 2.5-flash**, com **temperatu
 
 ---
 
-## ✂️ **3. Sumarização de Textos**
+##  **3. Sumarização de Textos**
 Gera um resumo condensado das principais notícias, destacando:
 
 - temas recorrentes  
@@ -43,7 +43,7 @@ Essa etapa utiliza novamente o **Gemini 2.5-flash**, desta vez com **temperature
 
 ---
 
-## 🧩 **Integração Final**
+##  **Integração Final**
 O pipeline completo resulta em uma **análise meta-sintética**, combinando:
 
 - dados coletados em tempo real  
@@ -115,7 +115,7 @@ Requisição contendo os filtros de:
 
 # **Implementação**
 
-## 📦 Instalação das Dependências
+##  Instalação das Dependências
 
 ```python
 !pip install -U --force-reinstall langchain langchain-google-genai google-generativeai newsapi-python tiktoken langchain-community langchain-text-splitters
