@@ -92,9 +92,9 @@ Implementar um **notebook no Google Colab** que faça uso do framework **LangCha
 
 Este projeto utiliza **três técnicas**:
 
-✔️ Busca Semântica  
-✔️ Extração Estruturada  
-✔️ Sumarização de Textos  
+- Busca Semântica  
+- Extração Estruturada  
+- Sumarização de Textos  
 
 O LLM e a API utilizados foram informados na planilha oficial do professor.
 
